@@ -37,26 +37,23 @@
             message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium laboriosam modi'
         });
 
-        /*let btn = document.getElementById("btn-add");
+        let btn = document.getElementById("btn-add");
         btn.addEventListener('click', () => {
 
             let mail = document.getElementById('email');
-            let fName = document.getElementById('firstName');
-            let lName = document.getElementById('lastName');
+            let message = document.getElementById('area');
         
 
             insertContact(db, {
                 email: mail.value,
-                firstName: fName.value,
-                lastName: lName.value
+                message: message.value
             });
 
             mail.value = "";
-            fName.value = "";
-            lName.value = "";
+            message.value = "";
             
             console.log('hello')
-        });*/
+        });
 
         getAllContacts(db);
    };
@@ -83,9 +80,9 @@
     
         // close the database once the 
         // transaction completes
-        txn.oncomplete = function () {
+        /*txn.oncomplete = function () {
             db.close();
-        };
+        };*/
     }
 
     function getAllContacts(db) {
@@ -113,8 +110,8 @@
             }
         };
         // close the database connection
-        txn.oncomplete = function () {
+       /* txn.oncomplete = function () {
             db.close();
-        };
+        };*/
     }
  })();

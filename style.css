@@ -63,6 +63,41 @@ body {
     padding: 100px;
 }
 
+hr {
+    margin: 25px 300px 25px 300px;
+}
+
+.text-review {
+    margin: 100px 200px 100px 200px;
+    padding: 50px;
+    background-color: antiquewhite;
+}
+
+.form-review {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#btn-add {
+    color: black;
+    padding: 10px;
+}
+#btn-add:hover {
+    background-color: burlywood;
+}
+
+.textarea {
+    width: 500px;
+    height: 300px;
+
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+}
+
+
 @media only screen and (min-width: 600px) {
     .grid-photo-text {
         grid-template-columns: 1fr 1fr;

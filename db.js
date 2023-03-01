@@ -37,26 +37,26 @@
             message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium laboriosam modi'
         });
 
-        /*let btn = document.getElementById("btn-add");
+        let btn = document.getElementById("btn-add");
         btn.addEventListener('click', () => {
 
             let mail = document.getElementById('email');
-            let fName = document.getElementById('firstName');
-            let lName = document.getElementById('lastName');
+            let message = document.getElementById('area');
         
-
-            insertContact(db, {
-                email: mail.value,
-                firstName: fName.value,
-                lastName: lName.value
-            });
-
-            mail.value = "";
-            fName.value = "";
-            lName.value = "";
-            
-            console.log('hello')
-        });*/
+            if(mail.value == "" || message.value == "") {
+                alert("Type your messege!")
+            } else {
+                insertContact(db, {
+                    email: mail.value,
+                    message: message.value
+                });
+    
+                mail.value = "";
+                message.value = "";
+                
+                console.log('hello')
+            }
+        });
 
         getAllContacts(db);
    };
@@ -83,9 +83,9 @@
     
         // close the database once the 
         // transaction completes
-        txn.oncomplete = function () {
+        /*txn.oncomplete = function () {
             db.close();
-        };
+        };*/
     }
 
     function getAllContacts(db) {
@@ -100,21 +100,29 @@
                 
                 let review = document.getElementById('review-section');
 
+                let section = document.createElement('section');
+                section.className = 'text-review';
+
                 let paragraph = document.createElement('p');
+                
                 let h1 = document.createElement('h1');
 
                 paragraph.innerHTML = contact.message;
                 h1.innerHTML = contact.email;
 
-                review.appendChild(h1);
-                review.appendChild(paragraph);
+               // review.appendChild(h1);
+                //review.appendChild(paragraph);
+                section.appendChild(h1);
+                section.appendChild(paragraph);
+
+                review.appendChild(section);
                 // continue next record
                 cursor.continue();
             }
         };
         // close the database connection
-        txn.oncomplete = function () {
+       /* txn.oncomplete = function () {
             db.close();
-        };
+        };*/
     }
  })();

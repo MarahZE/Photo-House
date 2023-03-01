@@ -112,6 +112,19 @@ hr {
     height: 30px;
 }
 
+.team-image {
+    width: 900px;
+    height: 700px;
+}
+
+.aboutus-text {
+    margin: 50px 100px 50px 100px;
+    padding: 50px;
+}
+
+.aboutus-img {
+    margin: 100px;
+}
 
 @media only screen and (min-width: 600px) {
     .grid-photo-text {

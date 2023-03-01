@@ -43,16 +43,19 @@
             let mail = document.getElementById('email');
             let message = document.getElementById('area');
         
-
-            insertContact(db, {
-                email: mail.value,
-                message: message.value
-            });
-
-            mail.value = "";
-            message.value = "";
-            
-            console.log('hello')
+            if(mail.value == "" || message.value == "") {
+                alert("Type your messege!")
+            } else {
+                insertContact(db, {
+                    email: mail.value,
+                    message: message.value
+                });
+    
+                mail.value = "";
+                message.value = "";
+                
+                console.log('hello')
+            }
         });
 
         getAllContacts(db);
@@ -97,14 +100,22 @@
                 
                 let review = document.getElementById('review-section');
 
+                let section = document.createElement('section');
+                section.className = 'text-review';
+
                 let paragraph = document.createElement('p');
+                
                 let h1 = document.createElement('h1');
 
                 paragraph.innerHTML = contact.message;
                 h1.innerHTML = contact.email;
 
-                review.appendChild(h1);
-                review.appendChild(paragraph);
+               // review.appendChild(h1);
+                //review.appendChild(paragraph);
+                section.appendChild(h1);
+                section.appendChild(paragraph);
+
+                review.appendChild(section);
                 // continue next record
                 cursor.continue();
             }

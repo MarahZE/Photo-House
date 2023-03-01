@@ -38,6 +38,20 @@ body {
     
 }
 
+.grid-service{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 500px;
+}
+
+.service-img {
+    width: 40%;
+    height: 90%;
+    margin-left: 150px;
+}
+
 .item-grid {
     width: 200px;
     height: 200px;
@@ -49,6 +63,7 @@ body {
     height: 250px;
     padding: 10px;
 }
+
 
 .text {
     margin-top: 50px;
@@ -113,7 +128,17 @@ hr {
         
     }
 
+    .grid-service{
+        grid-template-columns: 2fr 1fr;
+        width: 600px;
+       
+    }
 
+    .service-img {
+        width: 60%;
+        height: 100%;
+        margin-left: 30%;
+    }
 
 }
 
@@ -133,5 +158,18 @@ hr {
 
     .text {
         margin-top: 200px;
+    }
+
+    .grid-service{
+        grid-template-columns: 2fr 1fr;
+        width: 800px;
+        margin-left: 200px;
+       
+    }
+
+    .service-img {
+        width: 60%;
+        height: 100%;
+        margin-left: 30%;
     }
 }

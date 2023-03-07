@@ -44,7 +44,7 @@
             let message = document.getElementById('area');
         
             if(mail.value == "" || message.value == "") {
-                alert("Type your messege!")
+                alert("Type your review please!")
             } else {
                 insertContact(db, {
                     email: mail.value,
@@ -56,6 +56,7 @@
                 
                 console.log('hello')
             }
+            alert('Thank you for your review!')
         });
 
         getAllContacts(db);
@@ -80,12 +81,6 @@
         query.onerror = function (event) {
             console.log(event.target.errorCode);
         }
-    
-        // close the database once the 
-        // transaction completes
-        /*txn.oncomplete = function () {
-            db.close();
-        };*/
     }
 
     function getAllContacts(db) {
@@ -120,9 +115,5 @@
                 cursor.continue();
             }
         };
-        // close the database connection
-       /* txn.oncomplete = function () {
-            db.close();
-        };*/
     }
  })();

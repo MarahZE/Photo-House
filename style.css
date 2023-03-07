@@ -9,12 +9,31 @@ body {
     font-size: 20px;
 }
 
+nav {
+    list-style-type: none;
+}
+
+a {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    
+}
+
+a:hover {
+    color:cadetblue;
+}
+
+
+
 .grid-photo-text {
     display: grid;
     grid-template-columns: 1fr;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 50px;
+   
     margin-bottom: 50px;
     
 }
@@ -26,13 +45,19 @@ body {
 
 .front-text {
     text-align: center;
-    margin-top: 50px;
+    
     padding: 30px;
+    background-color: antiquewhite;
+}
+.text-home {
+    margin-top: 100px;
+    padding: 50px;
 }
 
 .grid-photo {
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: 60px;
     margin-top: 70px;
     margin-bottom: 70px;
     
@@ -44,6 +69,7 @@ body {
     margin-top: 70px;
     margin-bottom: 70px;
     width: 500px;
+
 }
 
 .service-img {
@@ -68,9 +94,14 @@ body {
 .text {
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: aliceblue;
+    background-color:antiquewhite;
     padding: 20px;
     
+}
+
+.text-homePage {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .footer {
@@ -93,12 +124,15 @@ hr {
     margin-bottom: 50px;
 }
 
+
 #btn-add {
     color: black;
+    margin-top: 15px;
+    background-color: antiquewhite;
     padding: 10px;
 }
 #btn-add:hover {
-    background-color: burlywood;
+    background-color:bisque;
 }
 
 .textarea {
@@ -119,11 +153,17 @@ hr {
 
 .aboutus-text {
     margin: 50px 100px 50px 100px;
-    padding: 50px;
+    padding: 70px;
+    background-color:antiquewhite;
 }
 
 .aboutus-img {
     margin: 100px;
+}
+
+.article-service{
+    background-color:antiquewhite;
+    padding: 5px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -136,14 +176,15 @@ hr {
     .grid-photo {
         width: 500px;
         height: 300px;
-        grid-template-columns: 2fr 2fr 2fr; 
+        grid-template-columns: 2fr 2fr 2fr 2fr; 
         margin-top: 150px;
         
     }
 
     .grid-service{
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 4fr 3fr;
         width: 600px;
+       gap: 5px;
        
     }
 
@@ -158,8 +199,9 @@ hr {
 @media only screen and (min-width: 1024px) { 
     
     .item-grid {
+        
         padding: 10px;
-        width: 300px;
+        width: 400px;
         height: 350px;
     }
 

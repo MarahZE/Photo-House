@@ -8,35 +8,37 @@
     <title>Contact</title>
 </head>
 <body>
-    <header>
-        <h1>LOGO </h1>
-    </header>
     <nav>
+        <h1>PHOTO HOUSE </h1>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
         <a href="aboutUs.html">About us</a>
-        <a href="review.html">Review</a>
+        <a href="review.html">Review us</a>
     </nav>
     <main>
 
         <section>
             <h1>Contact us</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam totam officiis blanditiis quibusdam assumenda nisi harum alias iusto labore laudantium eaque omnis possimus, quas beatae perferendis ratione et mollitia nihil.s</p>
-            <pre>
-            zeibakmarah@gmail.com
+            <hr>
+
+            <article  class="aboutus-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam totam officiis blanditiis quibusdam assumenda nisi harum alias iusto labore laudantium eaque omnis possimus, quas beatae perferendis ratione et mollitia nihil.s
+            <br>
+            zeibakmarah@gmail.com <br>
             (324) 456-4565 Sweden
 
-            </pre>
+            </p>
+            </article>
         </section>
 
-        <section>
+        <section class="form-contact">
             <form action="">
-                <input type="text" id="name" placeholder="Name"> <br> <br> 
-                <input type="text" id="phone" placeholder="Phone"> <br> <br>
-                <input type="email" id="email" placeholder="Email address"> <br> <br>
-                <textarea name="text" id="area" cols="30" rows="10"></textarea> <br>
-                <button id="btn"> Send</button>
+                <input type="text" id="name" placeholder="Name" class="input"> <br> <br> 
+                <input type="text" id="phone" placeholder="Phone" class="input"> <br> <br>
+                <input type="email" id="email" placeholder="Email address" class="input"> <br> <br>
+                <textarea name="text" id="area" cols="30" rows="10" class="textarea"></textarea> <br>
+                <button id="btn-add" onclick="load()"> Send</button>
             </form>
         </section>
 
@@ -45,5 +47,6 @@
         <p>Author: Marah Zeibak</p>
         <p><a href="mailto:hege@example.com">zeibakmarah@gmail.com</a></p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

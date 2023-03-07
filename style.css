@@ -33,7 +33,7 @@ a:hover {
     grid-template-columns: 1fr;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 50px;
+   
     margin-bottom: 50px;
     
 }
@@ -57,6 +57,7 @@ a:hover {
 .grid-photo {
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: 60px;
     margin-top: 70px;
     margin-bottom: 70px;
     
@@ -98,6 +99,11 @@ a:hover {
     
 }
 
+.text-homePage {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .footer {
     margin-top: 10px;
     padding: 100px;
@@ -118,12 +124,15 @@ hr {
     margin-bottom: 50px;
 }
 
+
 #btn-add {
     color: black;
+    margin-top: 15px;
+    background-color: antiquewhite;
     padding: 10px;
 }
 #btn-add:hover {
-    background-color:antiquewhite;
+    background-color:bisque;
 }
 
 .textarea {
@@ -144,7 +153,8 @@ hr {
 
 .aboutus-text {
     margin: 50px 100px 50px 100px;
-    padding: 50px;
+    padding: 70px;
+    background-color:antiquewhite;
 }
 
 .aboutus-img {
@@ -166,7 +176,7 @@ hr {
     .grid-photo {
         width: 500px;
         height: 300px;
-        grid-template-columns: 2fr 2fr 2fr; 
+        grid-template-columns: 2fr 2fr 2fr 2fr; 
         margin-top: 150px;
         
     }
@@ -189,8 +199,9 @@ hr {
 @media only screen and (min-width: 1024px) { 
     
     .item-grid {
+        
         padding: 10px;
-        width: 300px;
+        width: 400px;
         height: 350px;
     }
 

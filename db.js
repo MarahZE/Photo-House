@@ -53,10 +53,8 @@
     
                 mail.value = "";
                 message.value = "";
-                
-                console.log('hello')
+                alert('Thank you for your review!')
             }
-            alert('Thank you for your review!')
         });
 
         getAllContacts(db);
@@ -91,7 +89,6 @@
             let cursor = event.target.result;
             if (cursor) {
                 let contact = cursor.value;
-                console.log(contact);
                 
                 let review = document.getElementById('review-section');
 
